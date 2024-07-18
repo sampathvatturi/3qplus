@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.spgon.a3flowers.activity.LaunchScreen">
+
+    <ImageView
+        android:id="@+id/launch_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/main_logo"
+        app:layout_constraintBottom_toTopOf="@+id/launch_image"
+        app:layout_constraintEnd_toEndOf="@+id/bottm_sec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/launch_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/launch_screen"
+        app:layout_constraintTop_toBottomOf="@+id/launch_logo"
+        tools:layout_editor_absoluteX="13dp" />
+
+
+    <LinearLayout
+        android:id="@+id/bottm_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9EAFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CLICK PAYNOW"
+            android:textColor="@color/black" />
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUTTON TO PROCESSED"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/googlePayButtonn"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#00A08F"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="PAY NOW"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

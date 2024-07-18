@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <ImageView
+        android:id="@+id/thumbnailImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:contentDescription="Play Button"
+        android:src="@drawable/playbutton" />
+</FrameLayout>
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:paddingStart="16dp"
+        android:text="Hiiiiiiiiiiiiiiiiiiii"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/take_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:paddingStart="16dp"
+        android:text="Take Quiz -->"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp" />
+
+</LinearLayout>
